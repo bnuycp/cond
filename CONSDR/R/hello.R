@@ -11,11 +11,11 @@
 #   Test Package:              'Ctrl + Shift + T'
 
 condcor<- function(x, y, z, trans=1, seed=1, h=10) {
-  set.seed(proc.time()[3]*1000)
+  set.seed(1)
   library(nortest)
   library(MASS)
   library(splines)
-  set.seed(proc.time()[3]*1000)
+
   z <- as.matrix(z)
   n <- nrow(z); p1 <- ncol(z)
   x <- x - mean(x)
